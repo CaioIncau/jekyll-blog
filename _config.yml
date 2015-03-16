@@ -12,3 +12,5 @@ github_username:  caioincau
 
 # Build settings
 markdown: kramdown
+
+exclude: [node_modules]
