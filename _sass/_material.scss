@@ -1,6 +1,7 @@
 $material-red : #d32f2f;
 $white: #FFF;
 $menu-font-size: 1.3em;
+$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .main-menu{
   position: fixed;
@@ -18,18 +19,13 @@ $menu-font-size: 1.3em;
   animation-duration: 1s;
 }
 
-.main-menu-hide{
-  -webkit-animation: menu-move-hide 1s ease-out forwards;
-  animation: menu-move-hide 1s ease-out forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
 
 .main-menu {
     a{
       text-decoration: none;
       color: $white;
       padding: 0 1em;
+        font-family: $helvetica;
       font-size: $menu-font-size;
       display: block;
       margin: 1em 0;
@@ -41,6 +37,7 @@ $menu-font-size: 1.3em;
 .main-title{
 	display: inline-block;
 	vertical-align: middle;
+      font-family: $helvetica;
 	margin: 0;
     color: $white;
     font-size: $menu-font-size;
@@ -54,17 +51,6 @@ $menu-font-size: 1.3em;
 @keyframes menu-move-show {
     100% {
         left: 0;
-    }
-}
-
-@-webkit-keyframes menu-move-hide {
-    100% {
-        left: -100;
-    }
-}
-@keyframes menu-move-hide {
-    100% {
-        left: -100;
     }
 }
 
