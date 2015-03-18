@@ -2,9 +2,11 @@
   position: fixed;
   top: 3em;
   left: -100%;
-  background-color: #d32f2f;
+  background-color: #35469E;
   height: 100%;
-  width: 280px; }
+  width: 280px;
+  padding-top: 1em;
+  box-shadow: shadow-right; }
 
 .main-menu-hide {
   left: -100%; }
@@ -24,6 +26,8 @@
   display: block;
   margin: 1em 0;
   width: 100%; }
+  .main-menu a .fa-g {
+    margin-right: .5em; }
 
 .main-title {
   display: inline-block;
@@ -54,7 +58,7 @@
 .main-menu-bar {
   color: black;
   height: auto;
-  background-color: #d32f2f;
+  background-color: #35469E;
   z-index: 1;
   padding: .5em;
   position: fixed;
@@ -62,6 +66,7 @@
   left: 0;
   margin: 0em;
   width: 100%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   font-size: 1.3em;
   text-align: center;
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif; }

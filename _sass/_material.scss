@@ -1,96 +1,109 @@
-$material-red : #d32f2f;
+$main-bar-color : #35469E;
 $white: #FFF;
 $menu-font-size: 1.3em;
 $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-
-.main-menu{
-  position: fixed;
-  top: 3em;
-  left: -100%;
-  background-color: $material-red; 
-  height: 100%;
-  width: 280px;
-
-}
-.main-menu-hide{
-    left: -100%;
-}
-.main-menu-show{
-  -webkit-animation: menu-move-show 1s ease-out forwards;
-  animation: menu-move-show 1s ease-out forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-}
-
+$shadow-bottom-soft: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-bottom-normal: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-bottom-hard: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
 
 .main-menu {
-    a{
-      text-decoration: none;
-      color: $white;
-      padding: 0 1em;
+    position: fixed;
+    top: 3em;
+    left: -100%;
+    background-color: $main-bar-color;
+    height: 100%;
+    width: 280px;
+    padding-top: 1em;
+    box-shadow: shadow-right;
+}
+
+.main-menu-hide {
+    left: -100%;
+}
+
+.main-menu-show {
+    -webkit-animation: menu-move-show 1s ease-out forwards;
+    animation: menu-move-show 1s ease-out forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.main-menu {
+    a {
+        text-decoration: none;
+        color: $white;
+        padding: 0 1em;
         font-family: $helvetica;
-      font-size: $menu-font-size;
-      display: block;
-      margin: 1em 0;
-      width: 100%;
+        font-size: $menu-font-size;
+        display: block;
+        margin: 1em 0;
+        width: 100%;
+        .fa-g {
+            margin-right: .5em;
+        }
     }
 }
 
-
-.main-title{
-	display: inline-block;
-	vertical-align: middle;
-      font-family: $helvetica;
-	margin: 0;
+.main-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $helvetica;
+    margin: 0;
     color: $white;
     font-size: $menu-font-size;
-
 }
+
 @-webkit-keyframes menu-move-show {
     100% {
         left: 0;
     }
 }
+
 @keyframes menu-move-show {
     100% {
         left: 0;
     }
 }
-.main-menu-hide{
-  -webkit-animation: menu-move-hide 1s ease-in forwards ;
-  animation: menu-move-hide 1s ease-in forwards ;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+
+.main-menu-hide {
+    -webkit-animation: menu-move-hide 1s ease-in forwards;
+    animation: menu-move-hide 1s ease-in forwards;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
+
 @-webkit-keyframes menu-move-hide {
     100% {
         left: -100%;
     }
 }
+
 @keyframes menu-move-hide {
     100% {
         left: -100%;
     }
 }
 
-.main-menu-bar{
-	color: black;
-	height: auto;
-    background-color: $material-red; 
-	z-index: 1;
-	padding:.5em;
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: 0em;
-	width: 100%;
+.main-menu-bar {
+    color: black;
+    height: auto;
+    background-color: $main-bar-color;
+    z-index: 1;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0em;
+    width: 100%;
+    box-shadow: $shadow-bottom-normal;
     font-size: $menu-font-size;
-	text-align: center;
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+    text-align: center;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
-.main-menu-bar{ 
-    .fa-bars{
+.main-menu-bar {
+    .fa-bars {
         display: inline-block;
         outline: 0 !important;
         background: none !important;

@@ -19,7 +19,7 @@ strong{
 
 .container{
 	width: 90%;
-	margin: 2em auto;
+	margin: 5em auto;
 	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
@@ -179,35 +179,4 @@ ul.social li a:hover:before{
 					}
 /*End List */
 
-@-ms-viewport{
-  width: device-width;
-}
-
-@media screen and (max-width: 720px) {
-
-	.main-title{
-		position: fixed;
-		top: .5em;
-		left: 50%;
-	}
-	.main-menu a{ 
-		display:none;
-		padding: .5em;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.main-menu-bar .fa-bars{
-		float: left;
-		display: inline-block;
-		outline: 0 !important;
-		background: none !important;
-		border: 0 !important;
-		font-size: 2.5em;	
-	}
-	#about span{
-		width: 100%;
-		height: 50%;
-	}
-	
 }
