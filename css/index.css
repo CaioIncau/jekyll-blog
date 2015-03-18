@@ -17,12 +17,6 @@ strong{
 	text-align: center;
 }
 
-.container{
-	width: 90%;
-	margin: 5em auto;
-	font-family: Georgia, Times, "Times New Roman", serif;
-}
-
 #about,#portofolio,#know{
 	border-bottom: 2px solid #F1F1F1;
 }
@@ -178,5 +172,3 @@ ul.social li a:hover:before{
 						transition: background-color .2s ease-in-out;
 					}
 /*End List */
-
-}

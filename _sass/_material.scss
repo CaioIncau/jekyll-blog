@@ -2,11 +2,17 @@ $main-bar-color : #35469E;
 $white: #FFF;
 $menu-font-size: 1.3em;
 $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$roboto: 'Roboto', sans-serif;
 $shadow-bottom-soft: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 $shadow-bottom-normal: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 $shadow-bottom-hard: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 $shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
 
+.container{
+	width: 90%;
+	margin: 5em auto;
+	font-family: $roboto;
+}
 .main-menu {
     position: fixed;
     top: 3em;
@@ -15,7 +21,7 @@ $shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
     height: 100%;
     width: 280px;
     padding-top: 1em;
-    box-shadow: shadow-right;
+    box-shadow: $shadow-right;
 }
 
 .main-menu-hide {
@@ -34,7 +40,7 @@ $shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
         text-decoration: none;
         color: $white;
         padding: 0 1em;
-        font-family: $helvetica;
+        font-family: $roboto;
         font-size: $menu-font-size;
         display: block;
         margin: 1em 0;
@@ -48,7 +54,7 @@ $shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
 .main-title {
     display: inline-block;
     vertical-align: middle;
-    font-family: $helvetica;
+    font-family: $roboto;
     margin: 0;
     color: $white;
     font-size: $menu-font-size;
@@ -109,7 +115,7 @@ $shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
         background: none !important;
         border: 0 !important;
         float: left;
-        font-size: 2em;
+        font-size: $menu-font-size;
         color: $white;
     }
 }
