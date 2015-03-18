@@ -1,0 +1,61 @@
+.main-menu {
+  position: fixed;
+  left: -100%;
+  top: 3em;
+  background-color: #d32f2f;
+  height: 100%;
+  width: 280px; }
+
+.main-menu-show {
+  -webkit-animation: menu-move 1s ease-out forwards;
+  animation: menu-move 1s ease-out forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+.main-menu a {
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 1em;
+  font-size: 1.3em;
+  display: block;
+  margin: 1em 0;
+  width: 100%; }
+
+.main-title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  color: #FFF;
+  font-size: 1.3em; }
+
+@-webkit-keyframes menu-move {
+  100% {
+    left: 0; } }
+@keyframes menu-move {
+  100% {
+    left: 0; } }
+.main-menu-bar {
+  color: black;
+  height: auto;
+  background-color: #d32f2f;
+  z-index: 1;
+  padding: .5em;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0em;
+  width: 100%;
+  font-size: 1.3em;
+  text-align: center;
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif; }
+
+.main-menu-bar .fa-bars {
+  display: inline-block;
+  outline: 0 !important;
+  background: none !important;
+  border: 0 !important;
+  float: left;
+  font-size: 2em;
+  color: #FFF; }
+
+/*# sourceMappingURL=material.css.map */

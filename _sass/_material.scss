@@ -1,0 +1,98 @@
+$material-red : #d32f2f;
+$white: #FFF;
+$menu-font-size: 1.3em;
+
+.main-menu{
+  position: fixed;
+  left: -100%;
+  top: 3em;
+  background-color: $material-red; 
+  height: 100%;
+  width: 280px;
+
+}
+.main-menu-show{
+  -webkit-animation: menu-move-show 1s ease-out forwards;
+  animation: menu-move-show 1s ease-out forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.main-menu-hide{
+  -webkit-animation: menu-move-hide 1s ease-out forwards;
+  animation: menu-move-hide 1s ease-out forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+
+.main-menu {
+    a{
+      text-decoration: none;
+      color: $white;
+      padding: 0 1em;
+      font-size: $menu-font-size;
+      display: block;
+      margin: 1em 0;
+      width: 100%;
+    }
+}
+
+
+.main-title{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0;
+    color: $white;
+    font-size: $menu-font-size;
+
+}
+@-webkit-keyframes menu-move-show {
+    100% {
+        left: 0;
+    }
+}
+@keyframes menu-move-show {
+    100% {
+        left: 0;
+    }
+}
+
+@-webkit-keyframes menu-move-hide {
+    100% {
+        left: -100;
+    }
+}
+@keyframes menu-move-hide {
+    100% {
+        left: -100;
+    }
+}
+
+
+.main-menu-bar{
+	color: black;
+	height: auto;
+    background-color: $material-red; 
+	z-index: 1;
+	padding:.5em;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0em;
+	width: 100%;
+    font-size: $menu-font-size;
+	text-align: center;
+	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+.main-menu-bar{ 
+    .fa-bars{
+        display: inline-block;
+        outline: 0 !important;
+        background: none !important;
+        border: 0 !important;
+        float: left;
+        font-size: 2em;
+        color: $white;
+    }
+}

@@ -17,4 +17,6 @@ var cssPath = {cssSrc:['./css/*.css', '!*.min.css', '!/**/*.min.css'], cssDest:'
 });
 
 gulp.task('default', [ 'minify-css'], function() {
+      gulp.watch('./css/*.css', ['minify-css']);
+
 });

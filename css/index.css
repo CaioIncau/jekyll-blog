@@ -1,37 +1,4 @@
-.main-menu a{
-	text-decoration:none;
-	color: black;
-	width: 18%;
-	padding: 0 1em;
-	font-size: 1.3em;
-}
-.main-menu{
-	color: black;
-	height: auto;
-	z-index: 1;
-	padding:.5em;
-	background-color:white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: 0em;
-	width: 100%;
-	text-align: center;
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-}
 
-.main-menu .fa-bars{
-	display: none;
-	outline: 0 !important;
-	background: none !important;
-	border: 0 !important;
-}
-.main-title{
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-
-}
 .my-logo{
 	width: 1.5em;
 }
@@ -230,7 +197,7 @@ ul.social li a:hover:before{
 		text-align: center;
 	}
 	
-	.main-menu .fa-bars{
+	.main-menu-bar .fa-bars{
 		float: left;
 		display: inline-block;
 		outline: 0 !important;
