@@ -1,10 +1,12 @@
 .main-menu {
   position: fixed;
-  left: -100%;
   top: 3em;
   background-color: #d32f2f;
   height: 100%;
   width: 280px; }
+
+.main-menu-hide {
+  left: -100%; }
 
 .main-menu-show {
   -webkit-animation: menu-move-show 1s ease-out forwards;
@@ -36,6 +38,18 @@
 @keyframes menu-move-show {
   100% {
     left: 0; } }
+.main-menu-hide {
+  -webkit-animation: menu-move-hide 1s ease-in forwards;
+  animation: menu-move-hide 1s ease-in forwards;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s; }
+
+@-webkit-keyframes menu-move-hide {
+  100% {
+    left: -100%; } }
+@keyframes menu-move-hide {
+  100% {
+    left: -100%; } }
 .main-menu-bar {
   color: black;
   height: auto;

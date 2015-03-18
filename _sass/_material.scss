@@ -5,12 +5,14 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 .main-menu{
   position: fixed;
-  left: -100%;
   top: 3em;
   background-color: $material-red; 
   height: 100%;
   width: 280px;
 
+}
+.main-menu-hide{
+    left: -100%;
 }
 .main-menu-show{
   -webkit-animation: menu-move-show 1s ease-out forwards;
@@ -53,7 +55,22 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         left: 0;
     }
 }
-
+.main-menu-hide{
+  -webkit-animation: menu-move-hide 1s ease-in forwards ;
+  animation: menu-move-hide 1s ease-in forwards ;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+@-webkit-keyframes menu-move-hide {
+    100% {
+        left: -100%;
+    }
+}
+@keyframes menu-move-hide {
+    100% {
+        left: -100%;
+    }
+}
 
 .main-menu-bar{
 	color: black;
