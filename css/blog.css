@@ -24,3 +24,17 @@
 .blog-post_text img{
 	margin: 1em 0;
 }
+
+.blog-post_meta{
+    font-size: .7em;
+  margin-top: .5em;
+}
+
+.post-content p{
+  margin: 1em 0;
+}
+
+.post-content strong{
+  font-weight: bolder;
+  font-size: 1.3em;
+}

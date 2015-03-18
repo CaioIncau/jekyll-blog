@@ -6,6 +6,6 @@ layout: default
 
 		<div class="blog-title">
 		    <p class="post-meta blog-title_created">{{ post.date | date: "%b %-d, %Y" }}</p>
-			<h3 class="blog-post_title"> <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+			<h3> <a class="blog-post_title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 		</div>
    	{% endfor %}
