@@ -1,7 +1,13 @@
+body {
+  background-color: #ECECEC; }
+
 .container {
   width: 90%;
   margin: 5em auto;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: #FFF;
+  padding: 1em;
+  box-shadow: #e5e5e5 0px -1px 0px 0px, rgba(0, 0, 0, 0.11765) 0px 0px 2px 0px, rgba(0, 0, 0, 0.23922) 0px 2px 4px 0px; }
 
 .main-menu {
   position: fixed;
