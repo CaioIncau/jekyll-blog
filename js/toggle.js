@@ -10,9 +10,11 @@ $(function () {
     var el = $('.main-menu');
     if (el.hasClass("main-menu-hide"))
     {
+        el.css("left","-100%");
         el.addClass("main-menu-show").removeClass("main-menu-hide");
     }
     else{
+        el.css("left","0%");
         el.addClass("main-menu-hide").removeClass("main-menu-show");
     }
     });

@@ -6,6 +6,7 @@ $helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 .main-menu{
   position: fixed;
   top: 3em;
+  left: -100%;
   background-color: $material-red; 
   height: 100%;
   width: 280px;
