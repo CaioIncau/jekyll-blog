@@ -31,6 +31,10 @@ strong{
 	text-decoration: none;
 	color: #ea394d;
 }
+.cards-container div a{
+	display: inline-block;
+	width: 100%;
+}
 #about span{
     background:top right no-repeat url("/images/pic01.jpg");
     background-size: contain;
@@ -50,6 +54,8 @@ strong{
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	align-content: stretch;
+    text-align: center;
+
 }
 .work:hover{
 	opacity: 0.5;
@@ -57,7 +63,7 @@ strong{
 
 .work{
 	flex: 1;
-	min-width: 300px;
+	min-width: 200px;
 	margin: 1em 2em;
 	opacity: 1;
    transition: opacity .5s ease-in-out;
@@ -71,6 +77,7 @@ strong{
 	display: block;
 	margin: 0px auto;
 	padding-bottom: 1em;
+	width: 100%;
 	
 }
 .card-know{
@@ -79,7 +86,6 @@ strong{
 }
 .cards-container .education{
 	flex:2;
-	min-width: 350px;
 }
 .card-know p{
 	font-size: 1.5em;
