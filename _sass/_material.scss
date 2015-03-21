@@ -123,31 +123,45 @@ body{
     font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 
-.main-menu-bar {
-    button {
-        display: inline-block;
-        outline: 0 !important;
-        background: transparent;
-        padding: .5em;
-        border: 0 !important;
-        float: left;
-        font-size: $menu-font-size;
-        color: $white;
-        -webkit-animation: menu-bars-click $animation-default-duration ease-in forwards;
-        animation: menu-bars-click $animation-default-duration ease-in forwards;
-
-    }
-}
-
-@-webkit-keyframes menu-bars-click {
-    100% {
-        background-size: 50px;
-    }
+.main-menu-bar button {
+  display: inline-block;
+  outline: 0 !important;
+  background: transparent;
+  border: 0 !important;
+  float: left;
+  font-size: 1.3em;
+  color: #FFF;
+  -webkit-animation: menu-bars-click 0.5s ease-in forwards;
+  animation: menu-bars-click 0.5s ease-in forwards;
 }
 
 @keyframes menu-bars-click {
-    100% {
-        background-size: 50px;
-    }
+  100% {
+    background-size: 50px;
+  }
+}
+
+.main-menu a:hover {
+  -webkit-animation: menu-link-hover 0.5s ease-in forwards;
+  animation: menu-link-hover 0.5s ease-in forwards;
+}
+
+@keyframes menu-link-hover {
+  100% {
+    background-color: #1a237e;
+  }
+}
+
+
+.fa-bars:hover,.fa-arrow-left:hover {
+    cursor: pointer;
+  -webkit-animation: menu-button-hover 0.5s ease-in forwards;
+  animation: menu-button-hover 0.5s ease-in forwards;
+}
+
+@keyframes menu-button-hover {
+  100% {
+    color: #B6B6B6 ;
+  }
 }
 

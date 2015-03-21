@@ -119,13 +119,29 @@ body {
   animation: menu-bars-click 0.5s ease-in forwards;
 }
 
-@-webkit-keyframes menu-bars-click {
+@keyframes menu-bars-click {
   100% {
     background-size: 50px;
   }
 }
-@keyframes menu-bars-click {
+.main-menu a:hover {
+  -webkit-animation: menu-link-hover 0.5s ease-in forwards;
+  animation: menu-link-hover 0.5s ease-in forwards;
+}
+
+@keyframes menu-link-hover {
   100% {
-    background-size: 50px;
+    background-color: #1a237e;
+  }
+}
+.fa-bars:hover, .fa-arrow-left:hover {
+  cursor: pointer;
+  -webkit-animation: menu-button-hover 0.5s ease-in forwards;
+  animation: menu-button-hover 0.5s ease-in forwards;
+}
+
+@keyframes menu-button-hover {
+  100% {
+    color: #B6B6B6;
   }
 }

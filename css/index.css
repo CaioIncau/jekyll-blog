@@ -17,17 +17,14 @@ strong{
 	text-align: center;
 }
 
-#about,#portofolio,#know{
-	border-bottom: 2px solid #F1F1F1;
-}
-#about p,.card-know ul{
+.about p,.card-know ul{
 	font-size: 1em;
 	margin: 1.5em 0px;
 	color: rgb(46,46,46);
 	font-weight: 400;
 	line-height: 1.3em;
 }
-#about p a , .cards-container div a{
+.about p a , .cards-container div a{
 	text-decoration: none;
 	color: #ea394d;
 }
@@ -35,7 +32,7 @@ strong{
 	display: inline-block;
 	width: 100%;
 }
-#about span{
+.about span{
     background:top right no-repeat url("/images/pic01.jpg");
     background-size: contain;
 	width: 20%;
