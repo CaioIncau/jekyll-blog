@@ -3,7 +3,14 @@ var concat = require('gulp-concat');
 var autoprefix = require('gulp-autoprefixer');
 var minifyCSS = require('gulp-minify-css');
 var rename = require('gulp-rename');
+var sass = require('gulp-ruby-sass');
 
+
+
+gulp.task('sass', function () {
+    sass('./_sass/', { style: 'expanded' })
+        .pipe(gulp.dest('./css')); 
+});
 
 gulp.task('minify-css', function() {
 var cssPath = {cssSrc:['./css/*.css', '!*.min.css', '!/**/*.min.css'], cssDest:'./css'};
@@ -16,7 +23,7 @@ var cssPath = {cssSrc:['./css/*.css', '!*.min.css', '!/**/*.min.css'], cssDest:'
     .pipe(gulp.dest(cssPath.cssDest));
 });
 
-gulp.task('default', [ 'minify-css'], function() {
-      gulp.watch('./css/*.css', ['minify-css']);
+gulp.task('default', ['sass', 'minify-css'], function() {
+      gulp.watch('./css/*.css', ['sass','minify-css']);
 
 });
