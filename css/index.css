@@ -14,6 +14,7 @@ body{
 	margin: .5em 0em ;
 }
 .page-title{
+	font-family: 'Open Sans',sans-serif;
 	text-align: center;
     font-size: 2em;
     padding: 1em 0;
@@ -38,10 +39,15 @@ body{
 	background-color: white;
 }
 #about p,.card-know ul{
-	font-size: 1em;
-	margin: 1.5em 0px;
-	font-weight: 400;
+	font-size: 1.3em;
+	font-weight: 300;
 	line-height: 1.3em;
+}
+.card-know ul{
+	padding-bottom: 2em;
+}
+.callMain{
+	min-height: 12em;
 }
 #about p a , .cards-container div a{
 	text-decoration: none;
@@ -54,17 +60,14 @@ body{
 	display: inline-block;
 	width: 100%;
 }
-#about span{
-    background:top right no-repeat url("/images/pic01.jpg");
-    background-size: contain;
-	width: 20%;
-	padding-top: 29.8%;
-	height: 0;
-	content: '';
-	float: right;
-	background-position: center center;
-	margin-left: 2em;
+#about .me{
+	width: 6em;
+	border-radius: 100em;
+	float: left;
+	margin-right: 2em;
 	margin-bottom: 1em;
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 .cards-container{
 	display: flex;
@@ -113,9 +116,19 @@ body{
 
 #social{
 	margin: 1em 0em;
+	text-align: center;
+	padding-bottom: 3em;
 }
 /* List*/
-
+.contact-email{
+	display: inline-grid;
+    max-width: 250px;
+    vertical-align: bottom;
+    min-height: 6em;
+    padding-top: 3em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
 ul.social li a{
 	text-decoration: none;
 }
@@ -142,10 +155,11 @@ ul.social li a:hover:before{
 				justify-content: center;
 
 				margin: 0;
-				display: flex;
+				display: inline-flex;
+				max-width: 250px;
 				 -webkit-flex-wrap: wrap;
 				flex-wrap: wrap;
-				display: -webkit-flex;
+				display: -webkit-inline-flex;
 			}
 			
 				ul.social li
