@@ -1,10 +1,10 @@
 body {
-  background-color: #ECECEC; }
+  background-color: f2f3f5; }
 
 .container {
   width: 90%;
   margin: 5em auto;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: #FFF;
   padding: 1em;
   box-shadow: #e5e5e5 0px -1px 0px 0px, rgba(0, 0, 0, 0.11765) 0px 0px 2px 0px, rgba(0, 0, 0, 0.23922) 0px 2px 4px 0px; }
@@ -13,7 +13,7 @@ body {
   position: fixed;
   top: 3em;
   left: -100%;
-  background-color: #35469E;
+  background-color: white;
   height: 100%;
   width: 280px;
   padding-top: 1em;
@@ -28,15 +28,15 @@ body {
 
 .main-menu a {
   text-decoration: none;
-  color: #FFF;
+  color: black;
   padding: 1em 0em 1em 1em;
-  font-family: "Roboto", sans-serif;
+font-family: 'Open Sans', sans-serif;
   font-size: 1.3em;
   display: block; }
   .main-menu a .fa-g {
     margin-right: .5em; }
 .main-menu a:hover {
-  background-color: #1a237e; }
+  color: #41dd85; }
 .main-menu .me {
   background: url("/images/vamp.jpg") no-repeat;
   height: 50px;
@@ -49,9 +49,9 @@ body {
 .main-title {
   display: inline-block;
   vertical-align: middle;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
-  color: #FFF;
+  color: black;
   font-size: 1.3em; }
 
 @-webkit-keyframes menu-move-show {
@@ -73,19 +73,23 @@ body {
 .main-menu-bar {
   color: black;
   height: auto;
-  background-color: #35469E;
+  background-color: white;
   z-index: 1;
-  padding: .5em;
+  padding: .5em 5%;
   position: fixed;
   top: 0;
   left: 0;
   margin: 0em;
-  width: 100%;
+  width: 90%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   font-size: 1.3em;
   text-align: center;
-  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif; }
+  font-family: 'Open Sans', sans-serif;
+}
 
+.main-menu-bar button:hover{
+  color: #41dd85;
+}
 .main-menu-bar button {
   display: inline-block;
   outline: 0 !important;
@@ -93,7 +97,7 @@ body {
   border: 0 !important;
   float: left;
   font-size: 1.3em;
-  color: #FFF;
+  color: black;
   -webkit-animation: menu-bars-click 0.5s ease-in forwards;
   animation: menu-bars-click 0.5s ease-in forwards; }
 
