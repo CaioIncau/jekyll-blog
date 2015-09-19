@@ -1,37 +1,4 @@
-.main-menu a{
-	text-decoration:none;
-	color: black;
-	width: 18%;
-	padding: 0 1em;
-	font-size: 1.3em;
-}
-.main-menu{
-	color: black;
-	height: auto;
-	z-index: 1;
-	padding:.5em;
-	background-color:white;
-	position: fixed;
-	top: 0;
-	left: 0;
-	margin: 0em;
-	width: 100%;
-	text-align: center;
-	font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
-}
 
-.main-menu .fa-bars{
-	display: none;
-	outline: 0 !important;
-	background: none !important;
-	border: 0 !important;
-}
-.main-title{
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0;
-
-}
 .my-logo{
 	width: 1.5em;
 }
@@ -39,48 +6,68 @@ strong{
 	font-weight: bold;
 
 }
+body{
+	color: #666665;
+}
 .list-subtitle{
 	font-weight: bold;
 	margin: .5em 0em ;
 }
 .page-title{
-	font-size: 2em;
-	font-style: italic;
-	margin: 2em 0em;
+	font-family: 'Open Sans',sans-serif;
 	text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+    color: black;
 }
 
-.container{
-	width: 90%;
-	margin: 2em auto;
-	font-family: Georgia, Times, "Times New Roman", serif;
+#about,#know,#work,#social{
+	padding: 0 5%;
+}
+#about{
+	    margin-top: 5em;
+}
+.divider{
+	margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    border-top: 2px solid #b3b3b1;
+    padding-bottom: 40px;
 }
 
-#about,#portofolio,#know{
-	border-bottom: 2px solid #F1F1F1;
+#know{
+	background-color: white;
 }
 #about p,.card-know ul{
-	font-size: 1em;
-	margin: 1.5em 0px;
-	color: rgb(46,46,46);
-	font-weight: 400;
+	font-size: 1.3em;
+	font-weight: 300;
 	line-height: 1.3em;
+}
+.card-know ul{
+	padding-bottom: 2em;
+}
+.callMain{
+	min-height: 12em;
 }
 #about p a , .cards-container div a{
 	text-decoration: none;
-	color: #ea394d;
 }
-#about span{
-    background:top right no-repeat url("/images/pic01.jpg");
-    background-size: contain;
-	width: 20%;
-	padding-top: 29.8%;
-	height: 0;
-	content: '';
-	float: right;
-	background-position: center center;
-	margin-left: 2em;
+
+#social{
+	background-color: white;
+}
+.cards-container div a{
+	display: inline-block;
+	width: 100%;
+}
+#about .me{
+	width: 6em;
+	border-radius: 100em;
+	float: left;
+	margin-right: 2em;
 	margin-bottom: 1em;
+	filter: grayscale(100%); 
+	-webkit-filter: grayscale(100%); filter: grayscale(100%);
 }
 .cards-container{
 	display: flex;
@@ -89,6 +76,8 @@ strong{
 	flex-wrap: wrap;
 	-webkit-flex-wrap: wrap;
 	align-content: stretch;
+    text-align: center;
+
 }
 .work:hover{
 	opacity: 0.5;
@@ -96,7 +85,7 @@ strong{
 
 .work{
 	flex: 1;
-	min-width: 300px;
+	min-width: 200px;
 	margin: 1em 2em;
 	opacity: 1;
    transition: opacity .5s ease-in-out;
@@ -110,6 +99,7 @@ strong{
 	display: block;
 	margin: 0px auto;
 	padding-bottom: 1em;
+	width: 100%;
 	
 }
 .card-know{
@@ -118,18 +108,27 @@ strong{
 }
 .cards-container .education{
 	flex:2;
-	min-width: 350px;
 }
 .card-know p{
 	font-size: 1.5em;
-	text-align: left;
+	text-align: center;
 }
 
 #social{
 	margin: 1em 0em;
+	text-align: center;
+	padding-bottom: 3em;
 }
 /* List*/
-
+.contact-email{
+	display: inline-grid;
+    max-width: 250px;
+    vertical-align: bottom;
+    min-height: 6em;
+    padding-top: 3em;
+    font-size: 1.3em;
+    font-weight: 300;
+}
 ul.social li a{
 	text-decoration: none;
 }
@@ -156,10 +155,11 @@ ul.social li a:hover:before{
 				justify-content: center;
 
 				margin: 0;
-				display: flex;
+				display: inline-flex;
+				max-width: 250px;
 				 -webkit-flex-wrap: wrap;
 				flex-wrap: wrap;
-				display: -webkit-flex;
+				display: -webkit-inline-flex;
 			}
 			
 				ul.social li
@@ -211,36 +211,3 @@ ul.social li a:hover:before{
 						transition: background-color .2s ease-in-out;
 					}
 /*End List */
-
-@-ms-viewport{
-  width: device-width;
-}
-
-@media screen and (max-width: 720px) {
-
-	.main-title{
-		position: fixed;
-		top: .5em;
-		left: 50%;
-	}
-	.main-menu a{ 
-		display:none;
-		padding: .5em;
-		width: 100%;
-		text-align: center;
-	}
-	
-	.main-menu .fa-bars{
-		float: left;
-		display: inline-block;
-		outline: 0 !important;
-		background: none !important;
-		border: 0 !important;
-		font-size: 2.5em;	
-	}
-	#about span{
-		width: 100%;
-		height: 50%;
-	}
-	
-}

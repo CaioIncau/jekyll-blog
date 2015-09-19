@@ -1,0 +1,152 @@
+$main-bar-color : #35469E;
+$white: #FFF;
+$menu-font-size: 1.3em;
+$helvetica: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$roboto: 'Roboto', sans-serif;
+$shadow-bottom-soft: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+$shadow-bottom-normal: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+$shadow-bottom-hard: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+$shadow-right: 6px 0px 2px rgba(0,0,0,0.12), 4px 1px 9px rgba(0,0,0,0.24);
+$shadow-container: rgb(229, 229, 229) 0px -1px 0px 0px, rgba(0, 0, 0, 0.117647) 0px 0px 2px 0px, rgba(0, 0, 0, 0.239216) 0px 2px 4px 0px;
+$animation-default-duration: .5s;
+
+body{
+    background-color: #ECECEC;
+}
+.container{
+	width: 90%;
+	margin: 5em auto;
+	font-family: $roboto;
+    background-color: #FFF;
+    padding: 1em;
+    box-shadow: $shadow-container;
+}
+.main-menu {
+    position: fixed;
+    top: 3em;
+    left: -100%;
+    background-color: $main-bar-color;
+    height: 100%;
+    width: 280px;
+    padding-top: 1em;
+    z-index: 1;
+    box-shadow: $shadow-right;
+}
+
+.main-menu-hide {
+    left: -100%;
+}
+
+.main-menu-show {
+    -webkit-animation: menu-move-show $animation-default-duration ease-out forwards;
+    animation: menu-move-show $animation-default-duration ease-out forwards;
+}
+
+.main-menu {
+    a {
+        text-decoration: none;
+        color: $white;
+        padding: 1em 0em 1em 1em;
+        font-family: $roboto;
+        font-size: $menu-font-size;
+        display: block;
+        .fa-g {
+            margin-right: .5em;
+      }
+    }
+    a:hover{
+        background-color: #1a237e;
+      }
+    .me {
+        background: url("/images/vamp.jpg") no-repeat;
+        height: 50px;
+        width: 50px;
+        margin: 1em auto;
+        display: block;
+        border-radius: 100px;
+        background-size: 50px;
+    }
+}
+
+.main-title {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: $roboto;
+    margin: 0;
+    color: $white;
+    font-size: $menu-font-size;
+}
+
+@-webkit-keyframes menu-move-show {
+    100% {
+        left: 0;
+    }
+}
+
+@keyframes menu-move-show {
+    100% {
+        left: 0;
+    }
+}
+
+.main-menu-hide {
+    -webkit-animation: menu-move-hide $animation-default-duration ease-in forwards;
+    animation: menu-move-hide $animation-default-duration ease-in forwards;
+}
+
+@-webkit-keyframes menu-move-hide {
+    100% {
+        left: -100%;
+    }
+}
+
+@keyframes menu-move-hide {
+    100% {
+        left: -100%;
+    }
+}
+
+.main-menu-bar {
+    color: black;
+    height: auto;
+    background-color: $main-bar-color;
+    z-index: 2;
+    padding: .5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0em;
+    width: 100%;
+    box-shadow: $shadow-bottom-normal;
+    font-size: $menu-font-size;
+    text-align: center;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+.main-menu-bar {
+    button {
+        display: inline-block;
+        outline: 0 !important;
+        background: none !important;
+        border: 0 !important;
+        float: left;
+        font-size: $menu-font-size;
+        color: $white;
+        -webkit-animation: menu-bars-click $animation-default-duration ease-in forwards;
+        animation: menu-bars-click $animation-default-duration ease-in forwards;
+
+    }
+}
+
+@-webkit-keyframes menu-bars-click {
+    100% {
+        background-size: 50px;
+    }
+}
+
+@keyframes menu-bars-click {
+    100% {
+        background-size: 50px;
+    }
+}
+
